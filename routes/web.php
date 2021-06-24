@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test', [\App\Http\Controllers\Test_Controller_Dav1::class, 'index']);
+//Route::get('test', [\App\Http\Controllers\Test_Controller_Dav1::class, 'index']);
 Route::get('calculate', [\App\Http\Controllers\Test_Controller_Dav1::class, 'calculate']);
 

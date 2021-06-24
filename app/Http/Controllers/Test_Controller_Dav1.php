@@ -11,24 +11,25 @@ class Test_Controller_Dav1 extends Controller
 
         return view('test');
     }
+
     public function calculate(Request $request){
 
-        (int)$a = $request -> numberOne;
-        (int)$b = $request -> numberTwo;
+        (int)$one = $request -> numberOne;
+        (int)$two = $request -> numberTwo;
         $Action = $request->action;
 
 
           if ($Action =='division') {
-              return ($a / $b);
+              return ($one / $two);
           }
           if ($Action =='plus') {
-              return ($a + $b);
+              return ($one + $two);
           }
           if ($Action =='minus') {
-              return ($a - $b);
+              return ($one - $two);
           }
           if ($Action =='multiply') {
-              return ($a * $b);
+              return ($one * $two);
           }
 
     }
